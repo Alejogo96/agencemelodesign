@@ -25,7 +25,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/main.css" />
@@ -42,13 +42,21 @@
 
       <nav class="nav__menu" aria-label="Navigation principale">
         <ul class="nav__list" id="nav-list">
-          <li><a href="#services" class="nav__link">Services</a></li>
-          <li><a href="#approche" class="nav__link">Approche</a></li>
-          <li><a href="#portfolio" class="nav__link">Projets</a></li>
-          <li><a href="#apropos" class="nav__link">À propos</a></li>
-          <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+          <li><a href="#services" class="nav__link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#approche" class="nav__link" data-i18n="nav.approche">Approche</a></li>
+          <li><a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">Projets</a></li>
+          <li><a href="#apropos" class="nav__link" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="nav__lang" id="nav-lang" aria-label="Sélecteur de langue">
+        <button class="nav__lang-btn is-active" data-lang="fr" aria-label="Français">FR</button>
+        <span class="nav__lang-sep" aria-hidden="true">|</span>
+        <button class="nav__lang-btn" data-lang="en" aria-label="English">EN</button>
+        <span class="nav__lang-sep" aria-hidden="true">|</span>
+        <button class="nav__lang-btn" data-lang="es" aria-label="Español">ES</button>
+      </div>
 
       <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
@@ -62,38 +70,34 @@
     <section class="hero" id="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="eyebrow reveal">Studio de Product &amp; UX Design — Paris</p>
-          <h1 class="hero__title reveal">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Studio de Product &amp; UX Design — Paris</p>
+          <h1 class="hero__title reveal" data-i18n="hero.title">
             Des expériences digitales
             <span class="italic">pensées</span>
             pour créer de l'impact.
           </h1>
-          <p class="hero__lede reveal">
+          <p class="hero__lede reveal" data-i18n="hero.lede">
             Agence Mélo Design accompagne startups et PME dans la conception de produits numériques
             centrés utilisateur — de la recherche à l'interface, en passant par la stratégie et
             le design system.
           </p>
           <div class="hero__cta reveal">
-            <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
-            <a href="#portfolio" class="btn btn--ghost">Voir les projets <span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Démarrer un projet</a>
+            <a href="#portfolio" class="btn btn--ghost" data-i18n="hero.cta2">Voir les projets <span aria-hidden="true">→</span></a>
           </div>
           <ul class="hero__meta reveal" aria-label="Informations clés">
-            <li><span class="hero__meta-num">+6</span><span class="hero__meta-label">années d'expérience</span></li>
-            <li><span class="hero__meta-num">3</span><span class="hero__meta-label">langues — FR · EN · ES</span></li>
-            <li><span class="hero__meta-num">+25%</span><span class="hero__meta-label">conversion moyenne</span></li>
+            <li><span class="hero__meta-num">+6</span><span class="hero__meta-label" data-i18n="hero.meta1label">années d'expérience</span></li>
+            <li><span class="hero__meta-num">3</span><span class="hero__meta-label" data-i18n="hero.meta2label">langues — FR · EN · ES</span></li>
+            <li><span class="hero__meta-num">+25%</span><span class="hero__meta-label" data-i18n="hero.meta3label">conversion moyenne</span></li>
           </ul>
         </div>
 
         <aside class="hero__aside reveal" aria-hidden="true">
           <div class="hero__card">
-            <span class="hero__card-label">01 / Approche</span>
-            <p class="hero__card-quote">
+            <span class="hero__card-label" data-i18n="hero.card.label">01 / Approche</span>
+            <p class="hero__card-quote" data-i18n="hero.card.quote">
               <span class="italic">« Le bon design n'est pas décoratif — il est mesurable. »</span>
             </p>
-            <div class="hero__card-foot">
-              <span>Alejandro Guevara</span>
-              <span>Product Designer</span>
-            </div>
           </div>
           <div class="hero__orbit" aria-hidden="true">
             <span class="hero__orbit-dot"></span>
@@ -123,8 +127,8 @@
     <section class="section services" id="services">
       <div class="container">
         <header class="section__header">
-          <p class="eyebrow reveal">— Services</p>
-          <h2 class="section__title reveal">
+          <p class="eyebrow reveal" data-i18n="services.eyebrow">— Services</p>
+          <h2 class="section__title reveal" data-i18n="services.title">
             Quatre piliers pour <span class="italic">accompagner</span><br />
             l'ensemble de la chaîne de valeur du design.
           </h2>
@@ -134,61 +138,61 @@
 
           <article class="service reveal">
             <div class="service__num">01</div>
-            <h3 class="service__title">UX Design</h3>
-            <p class="service__lede">
+            <h3 class="service__title" data-i18n="s1.title">UX Design</h3>
+            <p class="service__lede" data-i18n="s1.lede">
               Conception end-to-end centrée utilisateur — de la phase discovery à la livraison
               et à l'itération. Des parcours clairs, des interfaces efficaces.
             </p>
             <ul class="service__list">
-              <li>Cadrage &amp; objectifs UX alignés business</li>
-              <li>User flows &amp; customer journey maps</li>
-              <li>Wireframes &amp; prototypage haute fidélité (Figma)</li>
-              <li>Audits UX &amp; optimisation de conversion</li>
+              <li data-i18n="s1.li1">Cadrage &amp; objectifs UX alignés business</li>
+              <li data-i18n="s1.li2">User flows &amp; customer journey maps</li>
+              <li data-i18n="s1.li3">Wireframes &amp; prototypage haute fidélité (Figma)</li>
+              <li data-i18n="s1.li4">Audits UX &amp; optimisation de conversion</li>
             </ul>
           </article>
 
           <article class="service reveal">
             <div class="service__num">02</div>
-            <h3 class="service__title">Product Design</h3>
-            <p class="service__lede">
+            <h3 class="service__title" data-i18n="s2.title">Product Design</h3>
+            <p class="service__lede" data-i18n="s2.lede">
               Intégration en tant que Product Designer externe au sein de vos équipes produit,
               pour construire, prioriser et itérer avec méthode.
             </p>
             <ul class="service__list">
-              <li>Product discovery &amp; roadmap (RICE, MoSCoW, Kano)</li>
-              <li>Design systems multi-produits</li>
-              <li>User stories &amp; critères d'acceptation</li>
-              <li>Collaboration agile produit · tech · marketing</li>
+              <li data-i18n="s2.li1">Product discovery &amp; roadmap (RICE, MoSCoW, Kano)</li>
+              <li data-i18n="s2.li2">Design systems multi-produits</li>
+              <li data-i18n="s2.li3">User stories &amp; critères d'acceptation</li>
+              <li data-i18n="s2.li4">Collaboration agile produit · tech · marketing</li>
             </ul>
           </article>
 
           <article class="service reveal">
             <div class="service__num">03</div>
-            <h3 class="service__title">UX Research</h3>
-            <p class="service__lede">
+            <h3 class="service__title" data-i18n="s3.title">UX Research</h3>
+            <p class="service__lede" data-i18n="s3.lede">
               Missions de recherche utilisateur pour éclairer vos décisions produit avec des
               données qualitatives et quantitatives.
             </p>
             <ul class="service__list">
-              <li>Interviews, questionnaires, tests utilisateurs</li>
-              <li>Benchmark concurrentiel &amp; analyse de marché</li>
-              <li>Analytics &amp; exploitation des KPIs</li>
-              <li>Synthèse d'insights &amp; recommandations</li>
+              <li data-i18n="s3.li1">Interviews, questionnaires, tests utilisateurs</li>
+              <li data-i18n="s3.li2">Benchmark concurrentiel &amp; analyse de marché</li>
+              <li data-i18n="s3.li3">Analytics &amp; exploitation des KPIs</li>
+              <li data-i18n="s3.li4">Synthèse d'insights &amp; recommandations</li>
             </ul>
           </article>
 
           <article class="service reveal">
             <div class="service__num">04</div>
-            <h3 class="service__title">UI &amp; Branding digital</h3>
-            <p class="service__lede">
+            <h3 class="service__title" data-i18n="s4.title">UI &amp; Branding digital</h3>
+            <p class="service__lede" data-i18n="s4.lede">
               Interfaces haute fidélité et identités visuelles digitales cohérentes,
               pensées pour se déployer sur toutes les plateformes.
             </p>
             <ul class="service__list">
-              <li>Direction artistique &amp; refonte d'identité digitale</li>
-              <li>Interfaces web &amp; mobile haute fidélité</li>
-              <li>Assets graphiques, icônes, illustrations</li>
-              <li>Design systems visuels multi-plateformes</li>
+              <li data-i18n="s4.li1">Direction artistique &amp; refonte d'identité digitale</li>
+              <li data-i18n="s4.li2">Interfaces web &amp; mobile haute fidélité</li>
+              <li data-i18n="s4.li3">Assets graphiques, icônes, illustrations</li>
+              <li data-i18n="s4.li4">Design systems visuels multi-plateformes</li>
             </ul>
           </article>
 
@@ -200,12 +204,12 @@
     <section class="section approche" id="approche">
       <div class="container approche__grid">
         <header class="approche__header">
-          <p class="eyebrow reveal">— Approche</p>
-          <h2 class="section__title reveal">
+          <p class="eyebrow reveal" data-i18n="approche.eyebrow">— Approche</p>
+          <h2 class="section__title reveal" data-i18n="approche.title">
             Une méthode <span class="italic">claire</span>,<br />
             des résultats <span class="italic">mesurables</span>.
           </h2>
-          <p class="approche__lede reveal">
+          <p class="approche__lede reveal" data-i18n="approche.lede">
             Chaque projet suit un processus structuré, adapté à votre maturité et à vos enjeux.
             Le design n'est pas un coût — c'est un investissement dont l'impact se mesure en
             conversion, rétention et satisfaction.
@@ -215,23 +219,23 @@
         <ol class="approche__steps">
           <li class="approche__step reveal">
             <span class="approche__step-num">01</span>
-            <h3 class="approche__step-title">Discover</h3>
-            <p>Écoute active, audit UX, recherche utilisateur et benchmark concurrentiel pour cadrer les bons problèmes.</p>
+            <h3 class="approche__step-title" data-i18n="step1.title">Discover</h3>
+            <p data-i18n="step1.desc">Écoute active, audit UX, recherche utilisateur et benchmark concurrentiel pour cadrer les bons problèmes.</p>
           </li>
           <li class="approche__step reveal">
             <span class="approche__step-num">02</span>
-            <h3 class="approche__step-title">Define</h3>
-            <p>Synthèse des insights, priorisation (RICE, MoSCoW) et définition d'une roadmap produit actionnable.</p>
+            <h3 class="approche__step-title" data-i18n="step2.title">Define</h3>
+            <p data-i18n="step2.desc">Synthèse des insights, priorisation (RICE, MoSCoW) et définition d'une roadmap produit actionnable.</p>
           </li>
           <li class="approche__step reveal">
             <span class="approche__step-num">03</span>
-            <h3 class="approche__step-title">Design</h3>
-            <p>Wireframes, prototypes interactifs, design system et UI haute fidélité testés auprès d'utilisateurs réels.</p>
+            <h3 class="approche__step-title" data-i18n="step3.title">Design</h3>
+            <p data-i18n="step3.desc">Wireframes, prototypes interactifs, design system et UI haute fidélité testés auprès d'utilisateurs réels.</p>
           </li>
           <li class="approche__step reveal">
             <span class="approche__step-num">04</span>
-            <h3 class="approche__step-title">Deliver</h3>
-            <p>Handoff développement, suivi d'implémentation, mesure d'impact et itérations basées sur la donnée.</p>
+            <h3 class="approche__step-title" data-i18n="step4.title">Deliver</h3>
+            <p data-i18n="step4.desc">Handoff développement, suivi d'implémentation, mesure d'impact et itérations basées sur la donnée.</p>
           </li>
         </ol>
       </div>
@@ -241,11 +245,11 @@
     <section class="section portfolio" id="portfolio">
       <div class="container">
         <header class="section__header">
-          <p class="eyebrow reveal">— Projets</p>
-          <h2 class="section__title reveal">
+          <p class="eyebrow reveal" data-i18n="portfolio.eyebrow">— Projets</p>
+          <h2 class="section__title reveal" data-i18n="portfolio.title">
             Une sélection de travaux <span class="italic">récents</span>.
           </h2>
-          <p class="section__subtitle reveal">
+          <p class="section__subtitle reveal" data-i18n="portfolio.subtitle">
             Études de cas publiées au fur et à mesure. Vous souhaitez consulter le portfolio complet ?
             <a href="#contact" class="inline-link">Écrivez-moi</a>.
           </p>
@@ -265,9 +269,9 @@
                 </svg>
               </div>
               <div class="project__meta">
-                <span class="project__tag">Product Design · USA</span>
+                <span class="project__tag" data-i18n="p1.tag">Product Design · USA</span>
                 <h3 class="project__title">Andy Electric</h3>
-                <p class="project__desc">Refonte de la plateforme B2B de gestion énergétique : +25&nbsp;% de conversion, −20&nbsp;% d'abandon.</p>
+                <p class="project__desc" data-i18n="p1.desc">Refonte de la plateforme B2B de gestion énergétique : +25&nbsp;% de conversion, −20&nbsp;% d'abandon.</p>
               </div>
             </a>
           </article>
@@ -285,9 +289,9 @@
                 </svg>
               </div>
               <div class="project__meta">
-                <span class="project__tag">UX/UI · France</span>
+                <span class="project__tag" data-i18n="p2.tag">UX/UI · France</span>
                 <h3 class="project__title">Ublo</h3>
-                <p class="project__desc">Conception d'un outil SaaS de gestion locative — design system multi-produits.</p>
+                <p class="project__desc" data-i18n="p2.desc">Conception d'un outil SaaS de gestion locative — design system multi-produits.</p>
               </div>
             </a>
           </article>
@@ -304,9 +308,9 @@
                 </svg>
               </div>
               <div class="project__meta">
-                <span class="project__tag">Branding · Colombia</span>
+                <span class="project__tag" data-i18n="p3.tag">Branding · Colombia</span>
                 <h3 class="project__title">Iridian</h3>
-                <p class="project__desc">Identité digitale et UI d'une plateforme de bien-être — direction artistique complète.</p>
+                <p class="project__desc" data-i18n="p3.desc">Identité digitale et UI d'une plateforme de bien-être — direction artistique complète.</p>
               </div>
             </a>
           </article>
@@ -324,9 +328,9 @@
                 </svg>
               </div>
               <div class="project__meta">
-                <span class="project__tag">UX Research · Colombia</span>
+                <span class="project__tag" data-i18n="p4.tag">UX Research · Colombia</span>
                 <h3 class="project__title">Casatoro</h3>
-                <p class="project__desc">Études utilisateurs et refonte UX d'une plateforme immobilière premium.</p>
+                <p class="project__desc" data-i18n="p4.desc">Études utilisateurs et refonte UX d'une plateforme immobilière premium.</p>
               </div>
             </a>
           </article>
@@ -354,12 +358,12 @@
         </div>
 
         <div class="apropos__content">
-          <p class="eyebrow reveal">— À propos</p>
-          <h2 class="section__title reveal">
+          <p class="eyebrow reveal" data-i18n="apropos.eyebrow">— À propos</p>
+          <h2 class="section__title reveal" data-i18n="apropos.title">
             Alejandro Guevara,<br />
             <span class="italic">Product &amp; UX Designer</span> à Paris.
           </h2>
-          <p class="apropos__lede reveal">
+          <p class="apropos__lede reveal" data-i18n="apropos.lede">
             Designer international avec une expérience prouvée entre la France, les États-Unis
             et la Colombie. Je mets la rigueur du design produit au service de la transformation
             digitale des entreprises — avec une approche trilingue, orientée impact et nourrie
@@ -368,24 +372,24 @@
 
           <dl class="apropos__facts reveal">
             <div>
-              <dt>Expertise</dt>
-              <dd>UX · Product Design · Design Systems · AI + UX</dd>
+              <dt data-i18n="apropos.dt1">Expertise</dt>
+              <dd data-i18n="apropos.dd1">UX · Product Design · Design Systems · AI + UX</dd>
             </div>
             <div>
-              <dt>Outils</dt>
-              <dd>Figma (expert) · FigJam · Maze · Hotjar · Notion</dd>
+              <dt data-i18n="apropos.dt2">Outils</dt>
+              <dd data-i18n="apropos.dd2">Figma (expert) · FigJam · Maze · Hotjar · Notion</dd>
             </div>
             <div>
-              <dt>Langues</dt>
-              <dd>Français (B2-C1) · Anglais (B2) · Espagnol (natif)</dd>
+              <dt data-i18n="apropos.dt3">Langues</dt>
+              <dd data-i18n="apropos.dd3">Français · Anglais · Espagnol</dd>
             </div>
             <div>
-              <dt>Clients récents</dt>
-              <dd>Andy Electric · Ublo · Iridian · Casatoro</dd>
+              <dt data-i18n="apropos.dt4">Clients récents</dt>
+              <dd data-i18n="apropos.dd4">Andy Electric · Ublo · Iridian · Casatoro</dd>
             </div>
           </dl>
 
-          <a href="#contact" class="btn btn--primary reveal">Parlons de votre projet</a>
+          <a href="#contact" class="btn btn--primary reveal" data-i18n="apropos.cta">Parlons de votre projet</a>
         </div>
       </div>
     </section>
@@ -394,78 +398,77 @@
     <section class="section contact" id="contact">
       <div class="container contact__grid">
         <div class="contact__content">
-          <p class="eyebrow reveal">— Contact</p>
-          <h2 class="section__title reveal">
+          <p class="eyebrow reveal" data-i18n="contact.eyebrow">— Contact</p>
+          <h2 class="section__title reveal" data-i18n="contact.title">
             Un projet en tête ?<br />
             <span class="italic">Parlons-en.</span>
           </h2>
-          <p class="contact__lede reveal">
+          <p class="contact__lede reveal" data-i18n="contact.lede">
             Un appel découverte gratuit de 30&nbsp;minutes pour cadrer vos enjeux,
             évaluer la faisabilité et vous proposer la meilleure approche.
           </p>
 
           <ul class="contact__infos">
             <li class="reveal">
-              <span class="contact__infos-label">Email</span>
+              <span class="contact__infos-label" data-i18n="contact.li1label">Email</span>
               <a href="mailto:oago1103@gmail.com">oago1103@gmail.com</a>
             </li>
             <li class="reveal">
-              <span class="contact__infos-label">Téléphone</span>
+              <span class="contact__infos-label" data-i18n="contact.li2label">Téléphone</span>
               <a href="tel:+33648760444">+33 6 48 76 04 44</a>
             </li>
             <li class="reveal">
-              <span class="contact__infos-label">Localisation</span>
-              <span>Paris, France — missions en remote partout en Europe &amp; USA</span>
+              <span class="contact__infos-label" data-i18n="contact.li3label">Localisation</span>
+              <span data-i18n="contact.li3val">Paris, France — missions en remote partout en Europe &amp; USA</span>
             </li>
             <li class="reveal">
-              <span class="contact__infos-label">Disponibilité</span>
-              <span>Acceptation de nouveaux projets</span>
+              <span class="contact__infos-label" data-i18n="contact.li4label">Disponibilité</span>
+              <span data-i18n="contact.li4val">Acceptation de nouveaux projets</span>
             </li>
           </ul>
         </div>
 
         <form class="contact__form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-          <!-- REMPLACER par votre access_key Web3Forms (gratuit : https://web3forms.com) -->
           <input type="hidden" name="access_key" value="VOTRE_ACCESS_KEY_WEB3FORMS" />
           <input type="hidden" name="subject" value="Nouveau message — agencemelodesign.com" />
           <input type="hidden" name="from_name" value="Agence Mélo Design" />
           <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
 
           <div class="field">
-            <label for="name">Nom complet</label>
+            <label for="name" data-i18n="contact.f.name">Nom complet</label>
             <input type="text" id="name" name="name" required autocomplete="name" />
           </div>
 
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email" data-i18n="contact.f.email">Email</label>
             <input type="email" id="email" name="email" required autocomplete="email" />
           </div>
 
           <div class="field">
-            <label for="company">Entreprise <span class="field__opt">(optionnel)</span></label>
+            <label for="company" data-i18n="contact.f.company">Entreprise <span class="field__opt">(optionnel)</span></label>
             <input type="text" id="company" name="company" autocomplete="organization" />
           </div>
 
           <div class="field">
-            <label for="service">Type de mission</label>
+            <label for="service" data-i18n="contact.f.service">Type de mission</label>
             <select id="service" name="service">
-              <option value="">Sélectionner…</option>
-              <option>UX Design</option>
-              <option>Product Design</option>
-              <option>UX Research</option>
-              <option>UI &amp; Branding digital</option>
-              <option>Design System</option>
-              <option>Autre</option>
+              <option value="" data-i18n="contact.f.opt0">Sélectionner…</option>
+              <option data-i18n="contact.f.opt1">UX Design</option>
+              <option data-i18n="contact.f.opt2">Product Design</option>
+              <option data-i18n="contact.f.opt3">UX Research</option>
+              <option data-i18n="contact.f.opt4">UI &amp; Branding digital</option>
+              <option data-i18n="contact.f.opt5">Design System</option>
+              <option data-i18n="contact.f.opt6">Autre</option>
             </select>
           </div>
 
           <div class="field field--full">
-            <label for="message">Décrivez votre projet</label>
+            <label for="message" data-i18n="contact.f.message">Décrivez votre projet</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
 
           <div class="field field--full form__submit">
-            <button type="submit" class="btn btn--primary">Envoyer le message</button>
+            <button type="submit" class="btn btn--primary" data-i18n="contact.f.submit">Envoyer le message</button>
             <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
@@ -478,15 +481,15 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <span class="nav__logo-mark">m<span class="nav__logo-dot">.</span></span>
-        <p>Studio freelance de Product &amp; UX Design — Paris.</p>
+        <p data-i18n="footer.brand">Studio freelance de Product &amp; UX Design — Paris.</p>
       </div>
       <nav class="footer__nav" aria-label="Navigation secondaire">
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#approche">Approche</a></li>
-          <li><a href="#portfolio">Projets</a></li>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#approche" data-i18n="nav.approche">Approche</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio">Projets</a></li>
+          <li><a href="#apropos" data-i18n="nav.apropos">À propos</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
       <div class="footer__legal">

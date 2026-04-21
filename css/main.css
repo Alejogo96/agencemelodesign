@@ -18,6 +18,7 @@
   /* Typographies */
   --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 
   /* Échelles */
   --fs-hero: clamp(2.75rem, 6vw + 1rem, 5.75rem);
@@ -65,7 +66,7 @@ a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, h4 { margin: 0; font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.01em; line-height: 1.1; }
-p { margin: 0; }
+p { margin: 0; font-family: var(--font-body); }
 .italic { font-style: italic; font-weight: 300; }
 
 .container {
@@ -224,6 +225,38 @@ p { margin: 0; }
 .nav__toggle[aria-expanded="true"] span:nth-child(1) { top: 21px; transform: rotate(45deg); }
 .nav__toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav__toggle[aria-expanded="true"] span:nth-child(3) { top: 21px; transform: rotate(-45deg); }
+
+/* ---------- Language switcher ---------- */
+.nav__lang {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.nav__lang-btn {
+  background: transparent;
+  border: 0;
+  padding: 0.3rem 0.45rem;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: color var(--transition);
+  line-height: 1;
+}
+.nav__lang-btn.is-active {
+  color: var(--color-ink);
+}
+.nav__lang-btn:not(.is-active):hover {
+  color: var(--color-ink-soft);
+}
+.nav__lang-sep {
+  color: var(--color-line);
+  font-size: var(--fs-xs);
+  user-select: none;
+  pointer-events: none;
+}
 
 /* ---------- HERO ---------- */
 .hero {
