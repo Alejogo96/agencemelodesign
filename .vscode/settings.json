@@ -1,0 +1,95 @@
+{
+  // ─── Éditeur ────────────────────────────────────────────────────────────
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.rulers": [100],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+
+  // ─── Fichiers ───────────────────────────────────────────────────────────
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "css"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+
+  // ─── HTML ───────────────────────────────────────────────────────────────
+  "html.format.wrapLineLength": 120,
+  "html.format.wrapAttributes": "auto",
+  "html.autoClosingTags": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ─── CSS ────────────────────────────────────────────────────────────────
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ─── JavaScript ─────────────────────────────────────────────────────────
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ─── Live Server (Ritwick Dey) ──────────────────────────────────────────
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.md"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // ─── Couleurs de la barre de titre (identité du projet) ─────────────────
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#1a1a1a",
+    "titleBar.activeForeground": "#d9c9a8",
+    "titleBar.inactiveBackground": "#1a1a1a",
+    "titleBar.inactiveForeground": "#6b645a",
+    "statusBar.background": "#1a1a1a",
+    "statusBar.foreground": "#d9c9a8",
+    "activityBar.activeBorder": "#b89968"
+  },
+
+  // ─── Spell checker (si Code Spell Checker est installé) ────────────────
+  "cSpell.language": "en,fr",
+  "cSpell.words": [
+    "agencemelodesign",
+    "apropos",
+    "Branding",
+    "Casatoro",
+    "eyebrow",
+    "Fraunces",
+    "Guevara",
+    "Iridian",
+    "Kano",
+    "MoSCoW",
+    "Parlons",
+    "RICE",
+    "SIRET",
+    "Ublo",
+    "Web3Forms"
+  ]
+}

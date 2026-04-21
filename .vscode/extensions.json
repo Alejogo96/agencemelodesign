@@ -1,0 +1,21 @@
+{
+  // Extensions recommandées pour ce projet.
+  // Lorsque tu ouvres le dossier dans VS Code, il te proposera
+  // automatiquement de les installer.
+  "recommendations": [
+    "ritwickdey.LiveServer",
+    "esbenp.prettier-vscode",
+    "ecmel.vscode-html-css",
+    "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-french",
+    "formulahendry.auto-rename-tag",
+    "pranaygp.vscode-css-peek",
+    "bradlc.vscode-tailwindcss",
+    "PKief.material-icon-theme",
+    "usernamehw.errorlens",
+    "yzhang.markdown-all-in-one",
+    "wayou.vscode-todo-highlight"
+  ],
+  "unwantedRecommendations": []
+}

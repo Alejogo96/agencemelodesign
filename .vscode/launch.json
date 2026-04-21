@@ -1,0 +1,21 @@
+{
+  // Configuration de debug Chrome
+  // Avant d'utiliser : démarre Live Server (clic droit sur index.html → "Open with Live Server")
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Ouvrir Chrome (Live Server)",
+      "url": "http://localhost:5500/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "edge",
+      "request": "launch",
+      "name": "Ouvrir Edge (Live Server)",
+      "url": "http://localhost:5500/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

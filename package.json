@@ -1,0 +1,46 @@
+{
+  "name": "agencemelodesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine — Agence Mélo Design · Studio freelance de Product & UX Design à Paris.",
+  "author": {
+    "name": "Alejandro Guevara",
+    "email": "oago1103@gmail.com",
+    "url": "https://agencemelodesign.com"
+  },
+  "homepage": "https://agencemelodesign.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alejogo96/agencemelodesign.git"
+  },
+  "keywords": [
+    "ux-design",
+    "product-design",
+    "ui-design",
+    "branding",
+    "paris",
+    "freelance",
+    "studio"
+  ],
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "npx --yes live-server --port=5500 --no-browser --open=/index.html .",
+    "start": "npm run dev",
+    "format": "npx --yes prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "npx --yes prettier --check \"**/*.{html,css,js,json,md}\"",
+    "validate": "npx --yes html-validate index.html",
+    "build:zip": "rm -f agencemelodesign.zip && zip -r agencemelodesign.zip index.html css js assets -x '*.DS_Store'",
+    "clean": "rm -rf node_modules agencemelodesign.zip"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^3.3.3",
+    "html-validate": "^8.22.0"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not op_mini all"
+  ]
+}

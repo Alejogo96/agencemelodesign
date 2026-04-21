@@ -1,0 +1,61 @@
+{
+  // Tâches npm disponibles dans VS Code
+  // Exécute avec : Cmd/Ctrl + Shift + P → "Tasks: Run Task"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🚀 Démarrer le serveur local",
+      "type": "npm",
+      "script": "dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "✨ Formater tous les fichiers",
+      "type": "npm",
+      "script": "format",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔍 Vérifier le formatage",
+      "type": "npm",
+      "script": "format:check",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "✅ Valider les liens HTML",
+      "type": "npm",
+      "script": "validate",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📦 Créer le ZIP pour Hostinger",
+      "type": "npm",
+      "script": "build:zip",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
