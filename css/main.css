@@ -869,3 +869,70 @@ p { margin: 0; font-family: var(--font-body); }
   }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* =========================================================
+   5e SERVICE — pleine largeur (AI + UX)
+   ========================================================= */
+.service--wide {
+  grid-column: 1 / -1;
+  border-top: 2px solid var(--color-accent);
+  padding-top: calc(var(--space-4) + 2px);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: var(--space-4);
+}
+.service--wide .service__num { grid-row: 1 / 4; align-self: start; }
+.service--wide .service__list { column-count: 2; column-gap: var(--space-4); }
+@media (max-width: 640px) {
+  .service--wide { display: block; }
+  .service--wide .service__list { column-count: 1; }
+}
+
+/* =========================================================
+   BOUTON WHATSAPP FLOTTANT
+   ========================================================= */
+.wa-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.65rem 1.2rem 0.65rem 0.85rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.wa-float:hover { transform: translateY(-3px); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+.wa-float svg { width: 20px; height: 20px; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .wa-float { padding: 0.8rem; border-radius: 50%; }
+  .wa-float .wa-label { display: none; }
+}
+
+/* =========================================================
+   LIENS SOCIAUX — FOOTER
+   ========================================================= */
+.footer__social { display: flex; gap: 0.75rem; margin-top: var(--space-2); }
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  color: var(--color-muted);
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.footer__social-link:hover { color: var(--color-accent); border-color: var(--color-accent); background: var(--color-bg-alt); }
+.footer__social-link svg { width: 15px; height: 15px; }
