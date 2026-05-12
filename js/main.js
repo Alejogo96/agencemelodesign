@@ -29,7 +29,7 @@
       'hero.card.quote': '<span class="italic">« Le bon design n\'est pas décoratif — il est mesurable. »</span>',
 
       'services.eyebrow': '— Services',
-      'services.title': 'Quatre piliers pour <span class="italic">accompagner</span><br>l\'ensemble de la chaîne de valeur du design.',
+      'services.title': 'Cinq piliers pour <span class="italic">accompagner</span><br>l\'ensemble de la chaîne de valeur du design.',
       's1.title': 'UX Design',
       's1.lede': 'Conception end-to-end centrée utilisateur — de la phase discovery à la livraison et à l\'itération. Des parcours clairs, des interfaces efficaces.',
       's1.li1': 'Cadrage &amp; objectifs UX alignés business',
@@ -54,6 +54,12 @@
       's4.li2': 'Interfaces web &amp; mobile haute fidélité',
       's4.li3': 'Assets graphiques, icônes, illustrations',
       's4.li4': 'Design systems visuels multi-plateformes',
+      's5.title': 'AI + UX Design',
+      's5.lede': 'Design accéléré par l\'intelligence artificielle — audits, synthèse de recherche et prototypes livrés en deux fois moins de temps, avec le même niveau d\'exigence.',
+      's5.li1': 'AI UX Audit — rapport complet en 48–72 h',
+      's5.li2': 'Synthèse de recherche IA (entretiens, enquêtes, enregistrements)',
+      's5.li3': 'Rapid prototyping + moodboard génératif',
+      's5.li4': 'UX Writing &amp; microcopy augmentés par IA',
 
       'approche.eyebrow': '— Approche',
       'approche.title': 'Une méthode <span class="italic">claire</span>,<br>des résultats <span class="italic">mesurables</span>.',
@@ -101,6 +107,8 @@
       'contact.li3val': 'Paris, France — missions en remote partout en Europe &amp; USA',
       'contact.li4label': 'Disponibilité',
       'contact.li4val': 'Acceptation de nouveaux projets',
+      'contact.li5label': 'Appel découverte',
+      'contact.li5val': 'Réserver 30 min gratuitement →',
       'contact.f.name': 'Nom complet',
       'contact.f.email': 'Email',
       'contact.f.company': 'Entreprise <span class="field__opt">(optionnel)</span>',
@@ -111,6 +119,7 @@
       'contact.f.opt3': 'UX Research',
       'contact.f.opt4': 'UI &amp; Branding digital',
       'contact.f.opt5': 'Design System',
+      'contact.f.opt_ai': 'AI + UX Design',
       'contact.f.opt6': 'Autre',
       'contact.f.message': 'Décrivez votre projet',
       'contact.f.submit': 'Envoyer le message',
@@ -141,7 +150,7 @@
       'hero.card.quote': '<span class="italic">"Good design is not decorative — it is measurable."</span>',
 
       'services.eyebrow': '— Services',
-      'services.title': 'Four pillars to <span class="italic">support</span><br>the full design value chain.',
+      'services.title': 'Five pillars to <span class="italic">support</span><br>the full design value chain.',
       's1.title': 'UX Design',
       's1.lede': 'End-to-end user-centred design — from discovery to delivery and iteration. Clear journeys, effective interfaces.',
       's1.li1': 'UX framing &amp; business-aligned objectives',
@@ -166,6 +175,12 @@
       's4.li2': 'High-fidelity web &amp; mobile interfaces',
       's4.li3': 'Graphic assets, icons, illustrations',
       's4.li4': 'Multi-platform visual design systems',
+      's5.title': 'AI + UX Design',
+      's5.lede': 'Design accelerated by artificial intelligence — audits, research synthesis and prototypes delivered in half the time, with the same level of quality.',
+      's5.li1': 'AI UX Audit — full report in 48–72 h',
+      's5.li2': 'AI-powered research synthesis (interviews, surveys, recordings)',
+      's5.li3': 'Rapid prototyping + generative moodboard',
+      's5.li4': 'UX Writing &amp; microcopy powered by AI',
 
       'approche.eyebrow': '— Approach',
       'approche.title': 'A <span class="italic">clear</span> method,<br>with <span class="italic">measurable</span> results.',
@@ -213,6 +228,8 @@
       'contact.li3val': 'Paris, France — remote projects across Europe &amp; USA',
       'contact.li4label': 'Availability',
       'contact.li4val': 'Accepting new projects',
+      'contact.li5label': 'Discovery call',
+      'contact.li5val': 'Book 30 min — free →',
       'contact.f.name': 'Full name',
       'contact.f.email': 'Email',
       'contact.f.company': 'Company <span class="field__opt">(optional)</span>',
@@ -223,6 +240,7 @@
       'contact.f.opt3': 'UX Research',
       'contact.f.opt4': 'UI &amp; Digital Branding',
       'contact.f.opt5': 'Design System',
+      'contact.f.opt_ai': 'AI + UX Design',
       'contact.f.opt6': 'Other',
       'contact.f.message': 'Describe your project',
       'contact.f.submit': 'Send message',
@@ -241,9 +259,9 @@
       'nav.apropos': 'Sobre mí',
       'nav.contact': 'Contacto',
 
-      'hero.eyebrow': 'Estudio de Product &amp; UX Design — París',
-      'hero.title': 'Experiencias digitales <span class="italic">diseñadas</span> para generar impacto.',
-      'hero.lede': 'Agence Mélo Design acompaña a startups y PYMEs en el diseño de productos digitales centrados en el usuario — desde la investigación hasta la interfaz, incluyendo estrategia y sistemas de diseño.',
+      'hero.eyebrow': 'Diseñador UX &amp; Product Designer — 100% Remoto · Todo el mundo',
+      'hero.title': 'Diseño que <span class="italic">convierte</span> — experiencias digitales de impacto para startups en LATAM y España.',
+      'hero.lede': 'Diseñador UX con 6+ años de experiencia en productos para EE.UU., Europa y LATAM. Entrego resultados medibles: más conversión, menos abandono, usuarios más satisfechos. Y uso IA para diseñar más rápido y a mejor precio.',
       'hero.cta1': 'Iniciar un proyecto',
       'hero.cta2': 'Ver proyectos <span aria-hidden="true">→</span>',
       'hero.meta1label': 'años de experiencia',
@@ -253,7 +271,7 @@
       'hero.card.quote': '<span class="italic">«El buen diseño no es decorativo — es medible.»</span>',
 
       'services.eyebrow': '— Servicios',
-      'services.title': 'Cuatro pilares para <span class="italic">acompañar</span><br>toda la cadena de valor del diseño.',
+      'services.title': 'Cinco pilares para <span class="italic">acompañar</span><br>toda la cadena de valor del diseño.',
       's1.title': 'UX Design',
       's1.lede': 'Diseño end-to-end centrado en el usuario — desde la fase discovery hasta la entrega e iteración. Recorridos claros, interfaces eficaces.',
       's1.li1': 'Definición &amp; objetivos UX alineados al negocio',
@@ -278,6 +296,12 @@
       's4.li2': 'Interfaces web &amp; móvil de alta fidelidad',
       's4.li3': 'Assets gráficos, iconos, ilustraciones',
       's4.li4': 'Design systems visuales multi-plataforma',
+      's5.title': 'AI + UX Design',
+      's5.lede': 'Diseño acelerado con inteligencia artificial — auditorías, síntesis de investigación y prototipos en la mitad del tiempo, con el mismo nivel de calidad de siempre.',
+      's5.li1': 'AI UX Audit — informe completo en 48–72 h',
+      's5.li2': 'Síntesis de investigación con IA (entrevistas, encuestas, grabaciones)',
+      's5.li3': 'Rapid prototyping + moodboard generativo',
+      's5.li4': 'UX Writing &amp; microcopy potenciados con IA',
 
       'approche.eyebrow': '— Enfoque',
       'approche.title': 'Un método <span class="italic">claro</span>,<br>resultados <span class="italic">medibles</span>.',
@@ -322,9 +346,11 @@
       'contact.li1label': 'Email',
       'contact.li2label': 'Teléfono',
       'contact.li3label': 'Ubicación',
-      'contact.li3val': 'París, Francia — proyectos remotos en Europa &amp; USA',
+      'contact.li3val': 'París, Francia — proyectos remotos en todo el mundo (LATAM · España · EE.UU. · Europa)',
       'contact.li4label': 'Disponibilidad',
       'contact.li4val': 'Aceptando nuevos proyectos',
+      'contact.li5label': 'Llamada de descubrimiento',
+      'contact.li5val': 'Reserva 30 min gratis →',
       'contact.f.name': 'Nombre completo',
       'contact.f.email': 'Email',
       'contact.f.company': 'Empresa <span class="field__opt">(opcional)</span>',
@@ -335,8 +361,9 @@
       'contact.f.opt3': 'UX Research',
       'contact.f.opt4': 'UI &amp; Branding digital',
       'contact.f.opt5': 'Design System',
+      'contact.f.opt_ai': 'AI + UX Design',
       'contact.f.opt6': 'Otro',
-      'contact.f.message': 'Describe tu proyecto',
+      'contact.f.message': 'Cuéntame tu proyecto',
       'contact.f.submit': 'Enviar mensaje',
       'contact.f.sending': 'Enviando…',
       'contact.f.success': 'Gracias, tu mensaje ha sido enviado. Te responderé en menos de 24h.',
@@ -350,7 +377,10 @@
   /* =========================================================
      LANGUE / LANGUAGE SWITCHER
      ========================================================= */
-  let activeLang = localStorage.getItem('md-lang') || 'fr';
+  // Détection automatique de la langue du navigateur (priorité : stockage local → navigateur → FR par défaut)
+  const _storedLang = localStorage.getItem('md-lang');
+  const _browserLang = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+  let activeLang = _storedLang || (_browserLang.startsWith('es') ? 'es' : _browserLang.startsWith('en') ? 'en' : 'fr');
 
   function applyLang(lang) {
     if (!T[lang]) return;
